@@ -10,7 +10,7 @@ Please keep an eye on this respository. I will complete it before the end of Sep
 
 ## Introduction ###
 
-I decide to make a UNet Zoo for medical image segmentation.
+All public available for use, including:
 
 - Networks: CNN-, ViT-, Mamba-, KAN-based UNet are all public available.
 
