@@ -3,7 +3,10 @@
 
 </div>
 
-Please keep an eye on this respository. I will complete it before the end of september.
+The Exploration of CNN- ViT- Mamba KAN- based UNet for Medical Image Segmentation
+
+
+Please keep an eye on this respository. I will complete it before the end of September 2024.
 
 ## Introduction ###
 
