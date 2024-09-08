@@ -3,15 +3,17 @@
 
 </div>
 
+Please keep an eye on this respository. I will complete it before the end of september.
+
 ## Introduction ###
 
 I decide to make a UNet Zoo for medical image segmentation.
 
-Networks: CNN-, ViT-, Mamba-, KAN-based UNet are all public available.
+- Networks: CNN-, ViT-, Mamba-, KAN-based UNet are all public available.
 
-Datasets: PH2, isic16, BUSI, GLAS, CVC-ClinicDB, Kvasir-SEG, 2018DSB are all public available.
+- Datasets: PH2, isic16, BUSI, GLAS, CVC-ClinicDB, Kvasir-SEG, 2018DSB are all public available.
 
-Metrics: Dice, IoU, Accuracy, Precision, Sensitivity, Specificity are all public available.
+- Metrics: Dice, IoU, Accuracy, Precision, Sensitivity, Specificity are all public available.
 
 ## Baseline Segmentation Network
 
