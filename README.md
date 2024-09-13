@@ -3,22 +3,26 @@
 
 </div>
 
-The Exploration of CNN, ViT, Mamba, and KAN-based UNet for Medical Image Segmentation
+The Exploration of CNN-, ViT-, Mamba-, and KAN-based UNet for Medical Image Segmentation.
 
+Please keep an eye on this repository. I plan to complete it by the end of September 2024.
 
-Please keep an eye on this respository. I will complete it before the end of September 2024.
 
 ## Introduction ###
 
-All public available for use, including:
+This repository provides public access to various tools and resources for medical image segmentation, including:
 
-- Networks: CNN-, ViT-, Mamba-, KAN-based UNet are all public available.
 
-- Datasets: PH2, isic16, BUSI, GLAS, CVC-ClinicDB, Kvasir-SEG, 2018DSB are all public available.
+- Networks: Implementations of CNN-, ViT-, Mamba-, and KAN-based UNet architectures.
 
-- Metrics: Dice, IoU, Accuracy, Precision, Sensitivity, Specificity are all public available.
 
-## Baseline Segmentation Network
+- Datasets: Publicly available datasets including PH2, ISIC 2016, BUSI, GLAS, CVC-ClinicDB, Kvasir-SEG, and 2018 DSB.
+
+
+- Metrics: Evaluation metrics such as Dice, IoU, Accuracy, Precision, Sensitivity, and Specificity, all publicly available.
+
+
+## Networks
 
 - CNN-based UNet
 
@@ -36,7 +40,7 @@ Mamba-UNet, VM-UNet
 
 U-KAN, etc
 
-## Dataset
+## Datasets
 
 - [x] Dataset of GLAS  -> [[Official]](https://www.kaggle.com/datasets/sani84/glasmiccai2015-gland-segmentation/) [[Google Drive]](https://drive.google.com/file/d/1_jtN4XFQ4TC74JiLl07nR1uUr9h5CpQk/view?usp=sharing)  
 - [x] Dataset of BUSI  -> [[Official]](https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset/)  [[Google Drive]](https://drive.google.com/file/d/1v4pWl6vQDNmFMJShzhpoxdiQ6Ixvz3gC/view?usp=sharing)  
@@ -51,14 +55,26 @@ U-KAN, etc
 Dice, IoU, Accuracy, Precision, Sensitivity, Specificity
 
 
+## Environment
+* Pytorch
+* Some basic python packages: Torchio, Numpy, Scikit-image, SimpleITK, Scipy, Medpy, nibabel, tqdm ......
+* For Mamba-related packages, please see [[PyPI (mamba-ssm)]](https://pypi.org/project/mamba-ssm/), [[Official GitHub (mamba)]](https://github.com/state-spaces/mamba), [[PyPI (causal-conv1d)]](https://pypi.org/project/causal-conv1d/) , [[GitHub (causal-conv1d)]](https://github.com/Dao-AILab/causal-conv1d).
+* For KAN-related packages, please see [[PyPI (pykan)]](https://pypi.org/project/pykan/), [[Official GitHub (ConvKAN)]](https://github.com/KindXiaoming/pykan), [[PyPI (convkan)]](https://pypi.org/project/convkan/), [[Official GitHub (ConvKAN)]](https://github.com/StarostinV/convkan).
+
+
 ## Usage
 
+1. Download the Code.
 ```shell
-git clone https://github.com/ziyangwang007/Mamba-UNet.git 
-cd Mamba-UNet
+git clone https://github.com/ziyangwang007/UNet-Seg.git 
+cd UNet-Seg
+```
+
+2. Download the Dataset via Google Drive or Baidu Netdisk to `UNet-Seg/data` folder.
 
 
-
+3. Train the model.
+```shell
 CUDA_VISIBLE_DEVICES=0 python -u train.py --network UNet --datasets PH2  && \
 CUDA_VISIBLE_DEVICES=0 python -u train.py --network UNet --datasets isic16  && \
 CUDA_VISIBLE_DEVICES=0 python -u train.py --network UNet --datasets BUSI  && \
@@ -116,6 +132,66 @@ CUDA_VISIBLE_DEVICES=0 python -u train.py --network KANUSeg --datasets Kvasir-SE
 CUDA_VISIBLE_DEVICES=0 python -u train.py --network KANUSeg --datasets 2018DSB
 ```
 
+4. Test the model.
+
+```shell
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network UNet --datasets PH2  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network UNet --datasets isic16  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network UNet --datasets BUSI  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network UNet --datasets GLAS  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network UNet --datasets CVC-ClinicDB && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network UNet --datasets Kvasir-SEG && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network UNet --datasets 2018DSB && \
+
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network DenseUnet --datasets PH2  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network DenseUnet --datasets isic16  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network DenseUnet --datasets BUSI  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network DenseUnet --datasets GLAS  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network DenseUnet --datasets CVC-ClinicDB && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network DenseUnet --datasets Kvasir-SEG && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network DenseUnet --datasets 2018DSB && \
+
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network AttU_Net --datasets PH2  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network AttU_Net --datasets isic16  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network AttU_Net --datasets BUSI  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network AttU_Net --datasets GLAS  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network AttU_Net --datasets CVC-ClinicDB && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network AttU_Net --datasets Kvasir-SEG && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network AttU_Net --datasets 2018DSB && \
+
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network ConvUNeXt --datasets PH2  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network ConvUNeXt --datasets isic16  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network ConvUNeXt --datasets BUSI  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network ConvUNeXt --datasets GLAS  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network ConvUNeXt --datasets CVC-ClinicDB && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network ConvUNeXt --datasets Kvasir-SEG && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network ConvUNeXt --datasets 2018DSB && \
+
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network SwinUnet --datasets PH2  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network SwinUnet --datasets isic16  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network SwinUnet --datasets BUSI  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network SwinUnet --datasets GLAS  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network SwinUnet --datasets CVC-ClinicDB && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network SwinUnet --datasets Kvasir-SEG && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network SwinUnet --datasets 2018DSB && \
+
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network TransUNet --datasets PH2  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network TransUNet --datasets isic16  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network TransUNet --datasets BUSI  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network TransUNet --datasets GLAS  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network TransUNet --datasets CVC-ClinicDB && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network TransUNet --datasets Kvasir-SEG && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network TransUNet --datasets 2018DSB && \
+
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network KANUSeg --datasets PH2  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network KANUSeg --datasets isic16  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network KANUSeg --datasets BUSI  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network KANUSeg --datasets GLAS  && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network KANUSeg --datasets CVC-ClinicDB && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network KANUSeg --datasets Kvasir-SEG && \
+CUDA_VISIBLE_DEVICES=0 python -u test.py --network KANUSeg --datasets 2018DSB
+
+```
 
 ## Reference
 ```bibtex
