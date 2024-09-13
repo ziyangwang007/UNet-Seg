@@ -3,23 +3,25 @@
 
 </div>
 
+## Introduction ###
+
 The Exploration of CNN-, ViT-, Mamba-, and KAN-based UNet for Medical Image Segmentation.
+
+9 Segmentation Networks, 7 public benchmark datasets, 6 evaluation metrics are public available!
 
 Please keep an eye on this repository. I plan to complete it by the end of September 2024.
 
 
-## Introduction ###
-
-This repository provides public access to various tools and resources for medical image segmentation, including:
 
 
-- Networks: Implementations of CNN-, ViT-, Mamba-, and KAN-based UNet architectures.
+## Contents ###
+- [Segmentation Network List](#Networks)
+- [Segmentation Dataset List](#Datasets)
+- [Segmentation Evaluation Metrics List](#Metrics)
+- [Environment](#Environment)
+- [Usage](#Usage)
+- [Reference](#Reference)
 
-
-- Datasets: Publicly available datasets including PH2, ISIC 2016, BUSI, GLAS, CVC-ClinicDB, Kvasir-SEG, and 2018 DSB.
-
-
-- Metrics: Evaluation metrics such as Dice, IoU, Accuracy, Precision, Sensitivity, and Specificity, all publicly available.
 
 
 ## Networks
@@ -39,6 +41,8 @@ Mamba-UNet, VM-UNet
 - KAN-based UNet
 
 U-KAN, etc
+
+
 
 ## Datasets
 
