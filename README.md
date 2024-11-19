@@ -28,7 +28,7 @@ Over 10 Segmentation Networks, 7 public benchmark datasets, 6 evaluation metrics
 
 | Architecture | Name | Reference | Availability |
 |:---------------|:----------------|:----------------|:----------------|
-| CNN | U-net           | [Ronneberger et al. (2015)](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) | - [x] |
+| CNN | U-net           | [Ronneberger et al. (2015)](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) | ✅ |
 | CNN | Attention U-net | [Oktay et al. (2018)](https://arxiv.org/abs/1804.03999) |  - [x] |
 | CNN | ResUnet         | [Diakogiannis et al. (2020)](https://doi.org/10.1016/j.isprsjprs.2020.01.013) |  - [x] |
 | CNN | DenseUnet       | [Li et al. (2020)](https://arxiv.org/pdf/1709.07330) |  [x] |
