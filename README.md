@@ -33,7 +33,7 @@ Over 10 Segmentation Networks, 7 public benchmark datasets, 6 evaluation metrics
 | CNN          | ResUnet         | [Diakogiannis et al. (2020)](https://doi.org/10.1016/j.isprsjprs.2020.01.013) | ✅ |
 | CNN          | DenseUnet       | [Li et al. (2020)](https://arxiv.org/pdf/1709.07330) | ✅ |
 | CNN          | ConvUNeXT       | [Han et al. (2022)](https://www.sciencedirect.com/science/article/abs/pii/S0950705122007572) | ✅ |
-| CNN          | TriConvUNeXT    | [Ma et al. (2024)](https://link.springer.com/article/10.1007/s10278-024-01116-8) | 🛠️ |
+| CNN          | TriConvUNeXT    | [Ma et al. (2024)](https://link.springer.com/article/10.1007/s10278-024-01116-8) | ⏳ |
 | ViT          | TransUNET       | [Chen et al. (2021)](https://arxiv.org/abs/2102.04306) | ✅ |
 | ViT          | Swin-UNET       | [Hu et al. (2021)](https://arxiv.org/abs/2105.05537) | ✅ |
 | ViT          | UDTransNet      | [Wang et al. (2024)](https://www.sciencedirect.com/science/article/abs/pii/S0893608024004702) | ⏳ |
@@ -45,33 +45,20 @@ Over 10 Segmentation Networks, 7 public benchmark datasets, 6 evaluation metrics
 
 
 
-- CNN-based UNet
-
-UNet, Attention UNet, DenseUNet, ConvUNeXt, 
-
-- ViT-based UNet
-
-TransUNet, SwinUNet
-
-- Mamba-based UNet
-
-Mamba-UNet, VM-UNet
-
-- KAN-based UNet
-
-U-KAN, etc
-
 
 
 ## Datasets
 
-- [x] Dataset of GLAS  -> [[Official]](https://www.kaggle.com/datasets/sani84/glasmiccai2015-gland-segmentation/), [[Google Drive]](https://drive.google.com/file/d/1_jtN4XFQ4TC74JiLl07nR1uUr9h5CpQk/view?usp=sharing), [[Baidu Netdisk]](https://pan.baidu.com/s/1SiDo4Dri12bApwpncqEavg) with passcode: 'fp42'
-- [x] Dataset of BUSI  -> [[Official]](https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset/),  [[Google Drive]](https://drive.google.com/file/d/1v4pWl6vQDNmFMJShzhpoxdiQ6Ixvz3gC/view?usp=sharing),  [[Baidu Netdisk]](https://pan.baidu.com/s/14V_lUlJ_XMYMgTYoz851qw) with passcode: '5m5m' 
-- [x] Dataset of 2018DSB   -> [[Official]](https://www.kaggle.com/competitions/data-science-bowl-2018/),  [[Google Drive]](https://drive.google.com/file/d/1LnonyBfGWrd4TQqX80WYWxzrO0nYRzXZ/view?usp=sharing), [[Baidu Netdisk]](https://pan.baidu.com/s/15WthemVJWGFPfE4WjRy6xw) with passcode: 'yavx' 
-- [x] Dataset of CVC-ClinicDB  -> [[Official]](https://paperswithcode.com/dataset/cvc-clinicdb/),  [[Google Drive]](https://drive.google.com/file/d/1FuZRCkUsKuMezhPKmqP6CrFGL1X4K8RN/view?usp=sharing), [[Baidu Netdisk]](https://pan.baidu.com/s/1f6XNKtOzF2mrFLb_UXKSuQ) with passcode: '3tpy' 
-- [x] Dataset of Kvasir-SEG  -> [[Official]](https://arxiv.org/abs/1911.07069/),  [[Google Drive]](https://drive.google.com/file/d/1yFYWp12ZEmbQOqNX--fBJdUc0va_HDq0/view?usp=sharing), [[Baidu Netdisk]](https://pan.baidu.com/s/1JYsAxpKHAXW67m_KnJUUyw) with passcode: '6fgs'
-- [x] Dataset of ISIC2016  -> [[Official]](https://challenge.isic-archive.com/landing/2016//), [[Google Drive]](https://drive.google.com/file/d/18RHPlZU_hckZ4STLh7JUhHybMjK7mluC/view?usp=sharing), [[Baidu Netdisk]](https://pan.baidu.com/s/1Bg38aIgwnZwHAqz-qOrLIg) with passcode: 'm2fw' 
-- [x] Dataset of PH2  -> [[Official]](https://ieeexplore.ieee.org/document/6610779/),  [[Google Drive]](https://drive.google.com/file/d/1g4byKNeSKzH7qiwbDn3g5FIWWMLUCerX/view?usp=sharing), [[Baidu Netdisk]](https://pan.baidu.com/s/1T_Y4RhJbJ_-J5FM9wLoAXg) with passcode: 'aiax'  
+| Dataset         | Reference                                                                                         | Google Drive                                                                                         | Baidu Netdisk                                      | Status |
+|:----------------|:--------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|:--------------------------------------------------|:-------|
+| GLAS            | [Official](https://www.kaggle.com/datasets/sani84/glasmiccai2015-gland-segmentation/)            | [Link](https://drive.google.com/file/d/1_jtN4XFQ4TC74JiLl07nR1uUr9h5CpQk/view?usp=sharing)           | [Link](https://pan.baidu.com/s/1SiDo4Dri12bApwpncqEavg) (Passcode: `fp42`) | ✅     |
+| BUSI            | [Official](https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset/)         | [Link](https://drive.google.com/file/d/1v4pWl6vQDNmFMJShzhpoxdiQ6Ixvz3gC/view?usp=sharing)          | [Link](https://pan.baidu.com/s/14V_lUlJ_XMYMgTYoz851qw) (Passcode: `5m5m`) | ✅     |
+| 2018DSB         | [Official](https://www.kaggle.com/competitions/data-science-bowl-2018/)                          | [Link](https://drive.google.com/file/d/1LnonyBfGWrd4TQqX80WYWxzrO0nYRzXZ/view?usp=sharing)           | [Link](https://pan.baidu.com/s/15WthemVJWGFPfE4WjRy6xw) (Passcode: `yavx`) | ✅     |
+| CVC-ClinicDB    | [Official](https://paperswithcode.com/dataset/cvc-clinicdb/)                                     | [Link](https://drive.google.com/file/d/1FuZRCkUsKuMezhPKmqP6CrFGL1X4K8RN/view?usp=sharing)           | [Link](https://pan.baidu.com/s/1f6XNKtOzF2mrFLb_UXKSuQ) (Passcode: `3tpy`) | ✅     |
+| Kvasir-SEG      | [Official](https://arxiv.org/abs/1911.07069/)                                                    | [Link](https://drive.google.com/file/d/1yFYWp12ZEmbQOqNX--fBJdUc0va_HDq0/view?usp=sharing)           | [Link](https://pan.baidu.com/s/1JYsAxpKHAXW67m_KnJUUyw) (Passcode: `6fgs`) | ✅     |
+| ISIC2016        | [Official](https://challenge.isic-archive.com/landing/2016/)                                     | [Link](https://drive.google.com/file/d/18RHPlZU_hckZ4STLh7JUhHybMjK7mluC/view?usp=sharing)           | [Link](https://pan.baidu.com/s/1Bg38aIgwnZwHAqz-qOrLIg) (Passcode: `m2fw`) | ✅     |
+| PH2             | [Official](https://ieeexplore.ieee.org/document/6610779/)                                        | [Link](https://drive.google.com/file/d/1g4byKNeSKzH7qiwbDn3g5FIWWMLUCerX/view?usp=sharing)           | [Link](https://pan.baidu.com/s/1T_Y4RhJbJ_-J5FM9wLoAXg) (Passcode: `aiax`) | ✅     |
+
 
 ## Metrics
 
