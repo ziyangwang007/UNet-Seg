@@ -33,7 +33,7 @@ Over 10 Segmentation Networks, 7 public benchmark datasets, 6 evaluation metrics
 | CNN | ResUnet         | [Diakogiannis et al. (2020)](https://doi.org/10.1016/j.isprsjprs.2020.01.013) |  - [x] |
 | CNN | DenseUnet       | [Li et al. (2020)](https://arxiv.org/pdf/1709.07330) |  [x] |
 | CNN | ConvUNeXT       | [Han et al. (2022)](https://www.sciencedirect.com/science/article/abs/pii/S0950705122007572) |  - [x] |
-| CNN | TriConvUNeXT    | [Ma et al. (2024)](https://link.springer.com/article/10.1007/s10278-024-01116-8 |  - [-] |
+| CNN | TriConvUNeXT    | [Ma et al. (2024)](https://link.springer.com/article/10.1007/s10278-024-01116-8) |  - [-] |
 | ViT | TransUNET       | [Chen et al. (2021)](https://arxiv.org/abs/2102.04306) | - [x] |
 | ViT | Swin-UNET       | [Hu et al. (2021)](https://arxiv.org/abs/2105.05537) | - [x] |
 | ViT | UDTransNet      | [Wang et al. (2024)](https://www.sciencedirect.com/science/article/abs/pii/S0893608024004702) | - [ ] |
