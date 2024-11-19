@@ -1,6 +1,6 @@
 <div align="center">
 <h1> UNet Zoo for Medical Image Segmentation </h1>
-
+<h2> CNN vs ViT vs Mamba vs KAN </h2>
 </div>
 
 ## Introduction ###
