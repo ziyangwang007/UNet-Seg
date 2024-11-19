@@ -1,0 +1,62 @@
+2024-06-15 19:56:37 - #----------Config info----------#
+2024-06-15 19:56:37 - f: <_io.TextIOWrapper name='./parsed_args.txt' mode='r' encoding='UTF-8'>,
+2024-06-15 19:56:37 - parsed_args: {'network': 'KANUSeg', 'datasets': 'GLAS'},
+2024-06-15 19:56:37 - line: datasets=GLAS
+,
+2024-06-15 19:56:37 - key: datasets,
+2024-06-15 19:56:37 - value: GLAS,
+2024-06-15 19:56:37 - network: KANUSeg,
+2024-06-15 19:56:37 - datasets: GLAS,
+2024-06-15 19:56:37 - model_config: {'num_classes': 1, 'input_channels': 3, 'EMBED_DIM': 96, 'depths': [2, 2, 2, 2], 'depths_decoder': [2, 2, 2, 1], 'drop_path_rate': 0.2, 'load_ckpt_path': './pretrained_ckpt/vmamba_small_e238_ema.pth'},
+2024-06-15 19:56:37 - data_path: ./data/GLAS/,
+2024-06-15 19:56:37 - criterion: BceDiceLoss(
+  (bce): BCELoss(
+    (bceloss): BCELoss()
+  )
+  (dice): DiceLoss()
+),
+2024-06-15 19:56:37 - pretrained_path: ./pre_trained/,
+2024-06-15 19:56:37 - num_classes: 1,
+2024-06-15 19:56:37 - input_size_h: 224,
+2024-06-15 19:56:37 - input_size_w: 224,
+2024-06-15 19:56:37 - input_channels: 3,
+2024-06-15 19:56:37 - distributed: False,
+2024-06-15 19:56:37 - local_rank: -1,
+2024-06-15 19:56:37 - num_workers: 0,
+2024-06-15 19:56:37 - seed: 42,
+2024-06-15 19:56:37 - world_size: None,
+2024-06-15 19:56:37 - rank: None,
+2024-06-15 19:56:37 - amp: False,
+2024-06-15 19:56:37 - gpu_id: 0,
+2024-06-15 19:56:37 - batch_size: 1,
+2024-06-15 19:56:37 - epochs: 300,
+2024-06-15 19:56:37 - work_dir: output/KANUSeg_GLAS_/,
+2024-06-15 19:56:37 - print_interval: 20,
+2024-06-15 19:56:37 - val_interval: 30,
+2024-06-15 19:56:37 - save_interval: 10,
+2024-06-15 19:56:37 - threshold: 0.5,
+2024-06-15 19:56:37 - train_transformer: Compose(
+    <utils.myNormalize object at 0x7cda9f9307d0>
+    <utils.myToTensor object at 0x7cdaa03998d0>
+    <utils.myRandomHorizontalFlip object at 0x7cdaa03b2bd0>
+    <utils.myRandomVerticalFlip object at 0x7cda9fa73fd0>
+    <utils.myRandomRotation object at 0x7cda9f8a4f50>
+    <utils.myResize object at 0x7cda9f8a4fd0>
+),
+2024-06-15 19:56:37 - test_transformer: Compose(
+    <utils.myNormalize object at 0x7cda9f8a5050>
+    <utils.myToTensor object at 0x7cda9f8a5090>
+    <utils.myResize object at 0x7cda9f8a50d0>
+),
+2024-06-15 19:56:37 - opt: AdamW,
+2024-06-15 19:56:37 - lr: 0.001,
+2024-06-15 19:56:37 - betas: (0.9, 0.999),
+2024-06-15 19:56:37 - eps: 1e-08,
+2024-06-15 19:56:37 - weight_decay: 0.01,
+2024-06-15 19:56:37 - amsgrad: False,
+2024-06-15 19:56:37 - sch: CosineAnnealingLR,
+2024-06-15 19:56:37 - T_max: 50,
+2024-06-15 19:56:37 - eta_min: 1e-05,
+2024-06-15 19:56:37 - last_epoch: -1,
+2024-06-15 19:56:43 - flops: 0.185450496, params: 0.132081, Total params: : 7.9930
+2024-06-15 19:57:20 - test of best model,  0.8665 &  0.7645 &  0.8607 &  0.8505 &  0.8832 & 0.8372, 

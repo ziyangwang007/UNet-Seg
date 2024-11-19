@@ -92,8 +92,11 @@ cd UNet-Seg
 
 2. Download the Dataset via Google Drive or Baidu Netdisk to `UNet-Seg/data` folder.
 
+3. Download Pretrained Model
 
-3. Train the model.
+Download through [Google Drive](https://drive.google.com/file/d/14RzbbBDjbKbgr0ordKlWbb69EFkHuplr/view?usp=sharing) for SwinUNet, and [[Google Drive]](https://drive.google.com/file/d/1uUPsr7XeqayCxlspqBHbg5zIWx0JYtSX/view?usp=sharing) for Mamba-UNet, and save in `UNet-Seg/pretrained_ckpt`.
+
+4. Train the model.
 ```shell
 CUDA_VISIBLE_DEVICES=0 python -u train.py --network UNet --datasets PH2  && \
 CUDA_VISIBLE_DEVICES=0 python -u train.py --network UNet --datasets isic16  && \
@@ -152,7 +155,7 @@ CUDA_VISIBLE_DEVICES=0 python -u train.py --network KANUSeg --datasets Kvasir-SE
 CUDA_VISIBLE_DEVICES=0 python -u train.py --network KANUSeg --datasets 2018DSB
 ```
 
-4. Test the model.
+5. Test the model.
 
 ```shell
 CUDA_VISIBLE_DEVICES=0 python -u test.py --network UNet --datasets PH2  && \
@@ -213,11 +216,29 @@ CUDA_VISIBLE_DEVICES=0 python -u test.py --network KANUSeg --datasets 2018DSB
 
 ```
 
+6. You can check the evaluation metrics directly after testing, and find prediction images in `UNet-Seg/models/results`.
+
+
 ## Reference
+If you find this repository useful for your research, please consider citing the following papers.
+
 ```bibtex
-TBC
+@article{wang2024mamba,
+  title={Mamba-unet: Unet-like pure visual mamba for medical image segmentation},
+  author={Wang, Ziyang and Zheng, Jian-Qing and Zhang, Yichi and Cui, Ge and Li, Lei},
+  journal={arXiv preprint arXiv:2402.05079},
+  year={2024}
+}
 
-TBC
+@article{zhang2024survey,
+  title={A survey on visual mamba},
+  author={Zhang, Hanwei and Zhu, Ying and Wang, Dan and Zhang, Lijun and Chen, Tianxiang and Wang, Ziyang and Ye, Zi},
+  journal={Applied Sciences},
+  volume={14},
+  number={13},
+  pages={5683},
+  year={2024},
+  publisher={MDPI}
+}
 
-TBC
 ```

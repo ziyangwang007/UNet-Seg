@@ -1,0 +1,2 @@
+network=KANUSeg
+datasets=2018DSB
