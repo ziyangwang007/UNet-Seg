@@ -216,7 +216,7 @@ CUDA_VISIBLE_DEVICES=0 python -u test.py --network KANUSeg --datasets 2018DSB
 
 ```
 
-6. You can check the evaluation metrics directly after testing, and find prediction images in `UNet-Seg/models/results`.
+6. You can check the evaluation metrics directly after testing, and find prediction images in `UNet-Seg/output`.
 
 
 ## Reference
