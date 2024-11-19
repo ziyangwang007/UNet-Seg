@@ -7,9 +7,7 @@
 
 The Exploration of CNN-, ViT-, Mamba-, and KAN-based UNet for Medical Image Segmentation.
 
-9 Segmentation Networks, 7 public benchmark datasets, 6 evaluation metrics are public available!
-
-Please keep an eye on this repository. I plan to complete it by the end of September 2024.
+Over 10 Segmentation Networks, 7 public benchmark datasets, 6 evaluation metrics are public available!
 
 
 
@@ -17,7 +15,7 @@ Please keep an eye on this repository. I plan to complete it by the end of Septe
 ## Contents ###
 - [Segmentation Network List](#Networks)
 - [Segmentation Dataset List](#Datasets)
-- [Segmentation Evaluation Metrics List](#Metrics)
+- [Segmentation Metrics List](#Metrics)
 - [Environment](#Environment)
 - [Usage](#Usage)
 - [Reference](#Reference)
@@ -25,6 +23,26 @@ Please keep an eye on this repository. I plan to complete it by the end of Septe
 
 
 ## Networks
+
+
+
+| Architecture | Name | Reference | Availability |
+|:---------------|:----------------|:----------------|:----------------|
+| CNN | U-net           | [Ronneberger et al. (2015)](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28) |  [x] |
+| CNN | Attention U-net | [Oktay et al. (2018)](https://arxiv.org/abs/1804.03999) |  [x] |
+| CNN | ResUnet         | [Diakogiannis et al. (2020)](https://doi.org/10.1016/j.isprsjprs.2020.01.013) |  [x] |
+| CNN | DenseUnet       | [Li et al. (2020)](https://arxiv.org/pdf/1709.07330) |  [x] |
+| CNN | ConvUNeXT       | [Han et al. (2022)](https://www.sciencedirect.com/science/article/abs/pii/S0950705122007572) |  [x] |
+| CNN | TriConvUNeXT    | [Ma et al. (2024)](https://link.springer.com/article/10.1007/s10278-024-01116-8 |  [] |
+| ViT | TransUNET       | [Chen et al. (2021)](https://arxiv.org/abs/2102.04306) | [x] |
+| ViT | Swin-UNET       | [Hu et al. (2021)](https://arxiv.org/abs/2105.05537) | [x] |
+| ViT | UDTransNet      | [Wang et al. (2024)](https://www.sciencedirect.com/science/article/abs/pii/S0893608024004702) | [] |
+| ViT | H2Former        | [He et al. (2023)](https://ieeexplore.ieee.org/document/10093768/) | [] |
+| Mamba | Mamba-UNet    | [Wang et al. (2024)](https://arxiv.org/abs/2402.05079) | [x] |
+| Mamba | VM-UNet       | [Ruan et al. (2024)](https://arxiv.org/abs/2402.02491) |  [] |
+| KAN | U-KAN           | [Li et al. (2024)](https://arxiv.org/abs/2406.02918) |  [] |
+| KAN | KAN-UNet        | [Wang et al. (2024)](https://github.com/ziyangwang007/UNet-Seg) | [x] |
+
 
 - CNN-based UNet
 
