@@ -64,8 +64,8 @@ Over 10 Segmentation Networks, 7 public benchmark datasets, 6 evaluation metrics
 
 | Metric        | Description                                                | Formula                                               | Status |
 |:--------------|:-----------------------------------------------------------|:------------------------------------------------------|:-------|
-| Dice          | Measures overlap between predicted and ground truth masks | $\frac{2 \times |A \cap B|}{|A| + |B|}$               | ✅     |
-| IoU           | Intersection over Union, also known as Jaccard Index      | $\frac{|A \cap B|}{|A \cup B|}$                       | ✅     |
+| Dice          | Measures overlap between predicted and ground truth masks | $\frac{2TP}{2TP + FP + FN}$                			| ✅     |
+| IoU           | Intersection over Union, also known as Jaccard Index      | $\frac{TP}{TP + FP + FN}$                             | ✅     |
 | Accuracy      | Proportion of correctly classified elements               | $\frac{TP + TN}{TP + FP + FN + TN}$                   | ✅     |
 | Precision     | Proportion of true positive predictions                   | $\frac{TP}{TP + FP}$                                  | ✅     |
 | Sensitivity   | True positive rate (Recall)                               | $\frac{TP}{TP + FN}$                                  | ✅     |
