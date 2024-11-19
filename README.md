@@ -33,11 +33,14 @@ Over 10 Segmentation Networks, 7 public benchmark datasets, 6 evaluation metrics
 | CNN          | ResUnet         | [Diakogiannis et al. (2020)](https://doi.org/10.1016/j.isprsjprs.2020.01.013) | ✅ |
 | CNN          | DenseUnet       | [Li et al. (2020)](https://arxiv.org/pdf/1709.07330) | ✅ |
 | CNN          | ConvUNeXT       | [Han et al. (2022)](https://www.sciencedirect.com/science/article/abs/pii/S0950705122007572) | ✅ |
+| CNN          | CMUNeXt         | [Tang et al. (2023)](https://arxiv.org/abs/2308.01239) | ⏳ |
+| CNN          | AMSUnet         | [Yin et al. (2023)](https://doi.org/10.1016/j.compbiomed.2023.107120) | ⏳ |
+| CNN          | MBSNet          | [Jin et al. (2023)](https://www.nature.com/articles/s41598-023-33357-y) | ⏳ |
 | CNN          | TriConvUNeXT    | [Ma et al. (2024)](https://link.springer.com/article/10.1007/s10278-024-01116-8) | ⏳ |
 | ViT          | TransUNET       | [Chen et al. (2021)](https://arxiv.org/abs/2102.04306) | ✅ |
 | ViT          | Swin-UNET       | [Hu et al. (2021)](https://arxiv.org/abs/2105.05537) | ✅ |
-| ViT          | UDTransNet      | [Wang et al. (2024)](https://www.sciencedirect.com/science/article/abs/pii/S0893608024004702) | ⏳ |
 | ViT          | H2Former        | [He et al. (2023)](https://ieeexplore.ieee.org/document/10093768/) | ⏳ |
+| ViT          | UDTransNet      | [Wang et al. (2024)](https://www.sciencedirect.com/science/article/abs/pii/S0893608024004702) | ⏳ |
 | Mamba        | Mamba-UNet      | [Wang et al. (2024)](https://arxiv.org/abs/2402.05079) | ✅ |
 | Mamba        | VM-UNet         | [Ruan et al. (2024)](https://arxiv.org/abs/2402.02491) | ⏳ |
 | KAN          | U-KAN           | [Li et al. (2024)](https://arxiv.org/abs/2406.02918) | ⏳ |
