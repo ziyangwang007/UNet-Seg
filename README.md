@@ -62,7 +62,15 @@ Over 10 Segmentation Networks, 7 public benchmark datasets, 6 evaluation metrics
 
 ## Metrics
 
-Dice, IoU, Accuracy, Precision, Sensitivity, Specificity
+| Metric        | Description                                                | Formula or Reference                                     | Status |
+|:--------------|:-----------------------------------------------------------|:--------------------------------------------------------|:-------|
+| Dice          | Measures overlap between predicted and ground truth masks | [Dice Similarity Coefficient](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient) | ✅     |
+| IoU           | Intersection over Union, also known as Jaccard Index      | [IoU Definition](https://en.wikipedia.org/wiki/Jaccard_index) | ✅     |
+| Accuracy      | Proportion of correctly classified elements               | $\frac{TP + TN}{TP + FP + FN + TN}$                     | ✅     |
+| Precision     | Proportion of true positive predictions                   | $\frac{TP}{TP + FP}$                                    | ✅     |
+| Sensitivity   | True positive rate (Recall)                               | $\frac{TP}{TP + FN}$                                    | ✅     |
+| Specificity   | True negative rate                                        | $\frac{TN}{TN + FP}$                                    | ✅     |
+
 
 
 ## Environment
