@@ -41,6 +41,7 @@ Over 10 Segmentation Networks, 7 public benchmark datasets, 6 evaluation metrics
 | ViT          | Swin-UNET       | [Hu et al. (2021)](https://arxiv.org/abs/2105.05537) | ✅ |
 | ViT          | H2Former        | [He et al. (2023)](https://ieeexplore.ieee.org/document/10093768/) | ⏳ |
 | ViT          | UDTransNet      | [Wang et al. (2024)](https://www.sciencedirect.com/science/article/abs/pii/S0893608024004702) | ⏳ |
+| ViT          | CSWin-UNet      | [Liu et al. (2025)](https://www.sciencedirect.com/science/article/pii/S1566253524004123) | ⏳ |
 | Mamba        | Mamba-UNet      | [Wang et al. (2024)](https://arxiv.org/abs/2402.05079) | ✅ |
 | Mamba        | VM-UNet         | [Ruan et al. (2024)](https://arxiv.org/abs/2402.02491) | ⏳ |
 | KAN          | U-KAN           | [Li et al. (2024)](https://arxiv.org/abs/2406.02918) | ⏳ |
@@ -61,7 +62,8 @@ Over 10 Segmentation Networks, 7 public benchmark datasets, 6 evaluation metrics
 | Kvasir-SEG      | [Official](https://arxiv.org/abs/1911.07069/)                                                    | [Link](https://drive.google.com/file/d/1yFYWp12ZEmbQOqNX--fBJdUc0va_HDq0/view?usp=sharing)           | [Link](https://pan.baidu.com/s/1JYsAxpKHAXW67m_KnJUUyw) (Passcode: `6fgs`) | ✅     |
 | ISIC2016        | [Official](https://challenge.isic-archive.com/landing/2016/)                                     | [Link](https://drive.google.com/file/d/18RHPlZU_hckZ4STLh7JUhHybMjK7mluC/view?usp=sharing)           | [Link](https://pan.baidu.com/s/1Bg38aIgwnZwHAqz-qOrLIg) (Passcode: `m2fw`) | ✅     |
 | PH2             | [Official](https://ieeexplore.ieee.org/document/6610779/)                                        | [Link](https://drive.google.com/file/d/1g4byKNeSKzH7qiwbDn3g5FIWWMLUCerX/view?usp=sharing)           | [Link](https://pan.baidu.com/s/1T_Y4RhJbJ_-J5FM9wLoAXg) (Passcode: `aiax`) | ✅     |
-
+| ACDC             | [Official](https://ieeexplore.ieee.org/abstract/document/8360453)                                        |            |  | ⏳     |
+| Synapse             | [Official](https://help.synapse.org/docs/Datasets.2611281979.html)                                        |            |  | ⏳     |
 
 ## Metrics
 
